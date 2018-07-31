@@ -30,5 +30,9 @@ class TestStringMethods(unittest.TestCase):
         c = Calc()
         self.assertEqual(c.multi(4,6), 24)
 
+    def test_fail_sum(self):
+        c = Calc()
+        self.assertEqual(c.sum(4,4), 9)
+
 if __name__ == '__main__':
     unittest.main()
